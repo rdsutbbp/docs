@@ -28,7 +28,7 @@ jobs:
         with:
           host: ${{ secrets.DOMAIN }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.PASSWORD }}   
+          password: ${{ secrets.PASSWORD }}   
           source: docs/.vuepress/dist/*
           target: ${{ secrets.SITEPATH }}
           strip_components: 1
