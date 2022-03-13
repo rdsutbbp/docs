@@ -29,5 +29,5 @@ jobs:
           host: gocloudcoder.com
           username: root
           password: 6435426Nj!  
-          source: docs/.vuepress/dist/*
-          target: /www/wwwroot/rdsutbbp.jaronnie.com
+          source: "docs/.vuepress/dist/*"
+          target: "/www/wwwroot/rdsutbbp.jaronnie.com"
