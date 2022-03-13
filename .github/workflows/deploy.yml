@@ -25,4 +25,4 @@ jobs:
       - name: Upload to ali cloud server
         run: |
           apt install sshpass
-          sshpass -p ${{ ali-server.PASSWORD }} scp -r docs/.vuepress/dist/* ${{ ali-server.USERNAME }}@${{ ali-server.DOMAIN }}:${{ ali-server.SITEPATH }}
+          sshpass -p ${{ secrets.PASSWORD }} scp -r docs/.vuepress/dist/* ${{ secrets.USERNAME }}@${{ secrets.DOMAIN }}:${{ secrets.SITEPATH }}
