@@ -1,0 +1,28 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download Source file
+        uses: actions/checkout@v2
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "17.x"
+
+      - name: Build Vuepress
+        run: |
+          npm i
+          npm run docs:build
+      - name: Upload to ali cloud server
+        run: |
+          apt install sshpass
+          sshpass -p ${{ ali-server.PASSWORD }} scp -r docs/.vuepress/dist/* ${{ ali-server.USERNAME }}@${{ ali-server.DOMAIN }}:${{ ali-server.SITEPATH }}
