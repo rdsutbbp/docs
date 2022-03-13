@@ -8,6 +8,8 @@ cd docset
 docker run -d -p 88:80 -v $PWD/docs/.vuepress/dist:/usr/share/nginx/html --name docset-rdsutbbp nginx
 ```
 
+访问: localhost:88
+
 ## 运行
 
 ```shell
