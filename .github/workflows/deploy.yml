@@ -23,7 +23,7 @@ jobs:
           npm i
           npm run docs:build
 
-      - name: remove the specified number of leading path elements
+      - name: copy file via ssh password
         uses: appleboy/scp-action@master
         with:
           host: gocloudcoder.com
