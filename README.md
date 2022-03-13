@@ -1,27 +1,32 @@
-# Rdsutbbp
+# docset
 
-简体中文 | [English](./README-en.md)
+## 本地部署测试
 
-## 介绍
+```shell
+git clone https://github.com/rdsutbbp/docset.git
+cd docset
+docker run -d -p 88:80 -v $PWD/docs/.vuepress/dist:/usr/share/nginx/html --name docset-rdsutbbp nginx
+```
 
-基于区块链 BaaS 平台下的资源委托系统，实现对于区块链资源的统一管控，能一键部署各种资源。
+## 运行
 
-![image-20220216112604361](https://resource.gocloudcoder.com/image-20220216112604361.png)
+```shell
+yarn
+# or npm i
 
-## 技术栈
+npm run docs:dev
+```
 
-### Go
+## 打包
 
-请看 https://github.com/rdsutbbp/core
+```shell
+npm run docs:build
+```
 
-### Java
+将生成 docs/.vuepress/dist 可直接在服务器上部署
 
-请看 https://github.com/rdsutbbp/stdb
+## devops
 
-### React
+采用 github actions, 提交后将自动部署到服务器上
 
-请看 https://github.com/rdsutbbp/console
-
-## 在线文档
-
-请看 https://rdsutbbp.jaronnie.com
+访问: http://rdsutbbp.jaronnie.com
