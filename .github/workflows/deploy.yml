@@ -24,5 +24,6 @@ jobs:
           npm run docs:build
       - name: Upload to ali cloud server
         run: |
+          apt-get update
           apt-get install sshpass
           sshpass -p ${{ secrets.PASSWORD }} scp -r docs/.vuepress/dist/* ${{ secrets.USERNAME }}@${{ secrets.DOMAIN }}:${{ secrets.SITEPATH }}
