@@ -6,6 +6,10 @@ Resource Delegation System Under the Blockchain BaaS Platform.
 
 在本次毕业设计中, 集成了软件开发过程中包括从设计, 开发实现, 运维等各个层面的内容, 用一年的实习经验完成此次毕业设计.
 
+模块间关系图
+
+![](https://resource.gocloudcoder.com/rdsutbbp-module.drawio.svg)
+
 ## Deploy
 
 [deploy](https://github.com/rdsutbbp/deploy) 用于部署系统所有需要的服务, 采用 docker-compose 一键部署.
