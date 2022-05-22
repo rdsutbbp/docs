@@ -35,10 +35,10 @@ module.exports = {
        // 当前 locale 的 algolia docsearch 选项
        algolia: {},
        nav: [
+         { text: 'deploy', link: '/deploy/', ariaLabel: '指南' },
          { text: 'core', link: '/core/', ariaLabel: '指南' },
          { text: 'delegation-system', link: '/delegation-system/', ariaLabel: '指南' },
          { text: 'stdb', link: '/stdb/', ariaLabel: '指南' },
-         { text: 'deploy', link: '/deploy/', ariaLabel: '指南' },
          { text: 'Github', link: 'https://github.com/rdsutbbp' }
        ],
        sidebar: {
