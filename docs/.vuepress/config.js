@@ -15,20 +15,8 @@ module.exports = {
     //   description: 'Resource Delegation System Under the Blockchain BaaS Platform.'
     // }
   },
-  plugins: [
-    '@vuepress/back-to-top',
-    ['qrcode',{
-      // "/" and "/zh/" correspond to the path set by locales
-        labelText: {
-          "/": "二维码", 
-          "/en/": "QrCode",
-        },
-        size:'small',
-        channel:true
-    }]
-  ],
   themeConfig: {
-
+    logo: 'https://resource.gocloudcoder.com/rdsutbbp.png',
     locales: {
       '/': {
        // 多语言下拉菜单的标题
@@ -48,10 +36,9 @@ module.exports = {
        algolia: {},
        nav: [
          { text: 'core', link: '/core/', ariaLabel: '指南' },
-         { text: 'stdb', link: '/stdb/', ariaLabel: '指南' },
-         { text: 'console', link: '/console/', ariaLabel: '指南' },
-         { text: 'deploy', link: '/deploy/', ariaLabel: '指南' },
          { text: 'delegation-system', link: '/delegation-system/', ariaLabel: '指南' },
+         { text: 'stdb', link: '/stdb/', ariaLabel: '指南' },
+         { text: 'deploy', link: '/deploy/', ariaLabel: '指南' },
          { text: 'Github', link: 'https://github.com/rdsutbbp' }
        ],
        sidebar: {
@@ -61,58 +48,17 @@ module.exports = {
          '/core/': [
            '',
          ],
+         '/delegation-system/': [
+          '',
+        ],
          '/stdb/': [
-           '',
-         ],
-         '/console/': [
            '',
          ],
          '/deploy/': [
            '',
          ],
-         '/delegation-system/': [
-          '',
-        ]
        }
       },
-      '/en/': {
-        selectText: 'Languages',
-        label: 'English',
-        ariaLabel: 'Languages',
-        editLinkText: 'Edit this page on GitHub',
-        serviceWorker: {
-          updatePopup: {
-            message: "New content is available.",
-            buttonText: "Refresh"
-          }
-        },
-        algolia: {},
-        nav: [
-         { text: 'core', link: '/en/core/', ariaLabel: 'Guide' },
-         { text: 'stdb', link: '/en/stdb/', ariaLabel: 'Guide' },
-         { text: 'console', link: '/en/console/', ariaLabel: 'Guide' },
-         { text: 'deploy', link: '/en/deploy/', ariaLabel: 'Guide' },
-         { text: 'delegation-system', link: '/en/delegation-system/', ariaLabel: 'Guide' },
-         { text: 'Github', link: 'https://github.com/rdsutbbp' }
-        ],
-        sidebar: {
-          '/en/core/': [
-            '',
-          ],
-          '/en/stdb/': [
-            '',
-          ],
-          '/en/console/': [
-            '',
-          ],
-          '/en/deploy/': [
-            '',
-          ],
-          '/en/delegation-system/': [
-            '',
-          ]
-        }
-      }
     }
   },
   

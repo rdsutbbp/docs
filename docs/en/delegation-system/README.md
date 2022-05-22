@@ -1,3 +1,0 @@
-# delegation-system
-
-delegation-system
