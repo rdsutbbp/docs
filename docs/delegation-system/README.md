@@ -22,6 +22,28 @@
 * 开放端口
 * 执行命令
 
+```yaml
+name:
+  id: colocation
+  text: 'colocation'
+  meta:
+    tags: 'host'
+  description: '基于物理机的主机委托系统'
+version: v1_1_26
+actions:
+  - id: command-host
+    name:
+      id: command
+      text: "执行命令"
+      description: "执行命令"
+    target: host
+    timeout: 120
+    isSystem: true
+    tag: 'colocation'
+exePath: 'exe/delegation'
+id: colocationv1_1_26
+```
+
 ## 链委托系统
 
 不关心采用何种方式部署
